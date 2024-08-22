@@ -7,8 +7,8 @@ export default function ProductGrid({ products, onAddToCart }) {
     <div className={styles.productGrid}>
       <Container>
         <Row>
-          {products.map((product) => (
-            <Col xs={12} md={6} lg={4} xl={3}>
+          {products.map((product, i) => (
+            <Col key={i} xs={12} md={6} lg={4} xl={3}>
               <ProductCard
                 key={product.id}
                 product={product}
