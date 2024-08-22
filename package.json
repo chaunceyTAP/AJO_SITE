@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "SET ORG_ID=18F332CC5B4DB4150A495DF0@AdobeOrg && next dev",
     "build": "next build",
-    "start": "SET ORG_ID=18F332CC5B4DB4150A495DF0@AdobeOrg && next start",
+    "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
