@@ -1,9 +1,9 @@
 import styles from '@/styles/Home.module.css'
-
+import Image from 'next'
 export default function ProductCard({ product, onAddToCart }) {
   return (
     <div className={styles.productCard}>
-      <img
+      <Image
         src={product.image}
         alt={product.name}
         className={styles.productImage}

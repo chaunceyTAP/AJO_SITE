@@ -21,9 +21,9 @@ export default function Testimonials() {
         <div className={styles.testimonialsGrid}>
           {testimonials.map((testimonial, index) => (
             <div key={index} className={styles.testimonialCard}>
-              <p>"{testimonial.text}"</p>
+              <p>{testimonial.text}</p>
               <p>
-                - {testimonial.name}, {testimonial.company}
+                {testimonial.name}, {testimonial.company}
               </p>
             </div>
           ))}
