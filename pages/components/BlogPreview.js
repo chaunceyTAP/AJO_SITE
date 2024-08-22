@@ -17,16 +17,18 @@ export default function BlogPreview() {
 
   return (
     <section className={styles.blogPreviewSection}>
-      <h2>Latest from the Blog</h2>
-      <div className={styles.blogGrid}>
-        {posts.map((post, index) => (
-          <div key={index} className={styles.blogCard}>
-            <h3>{post.title}</h3>
-            <p>{post.date}</p>
-            <p>{post.excerpt}</p>
-          </div>
-        ))}
-      </div>
+      <Container>
+        <h2>Latest from the Blog</h2>
+        <div className={styles.blogGrid}>
+          {posts.map((post, index) => (
+            <div key={index} className={styles.blogCard}>
+              <h3>{post.title}</h3>
+              <p>{post.date}</p>
+              <p>{post.excerpt}</p>
+            </div>
+          ))}
+        </div>
+      </Container>
     </section>
   )
 }

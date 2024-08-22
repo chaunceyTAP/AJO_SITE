@@ -1,5 +1,6 @@
 import { useRouter } from 'next/router'
 import styles from '@/styles/ShopPage.module.css'
+import { Button } from 'reactstrap'
 
 export default function CartSummary({ cartItems }) {
   const router = useRouter()
@@ -20,10 +21,14 @@ export default function CartSummary({ cartItems }) {
       </ul>
       <p>Total Items: {totalItems}</p>
       <p>Total Price: ${totalPrice}</p>
-      <button
+      {/* <Button
         className={styles.checkoutButton}
-        onClick={() => router.push('/checkout')}
+        // onClick={() => router.push('/checkout')}
+        href='/Checkout'
       >
+        Checkout
+      </Button> */}
+      <button href='/Checkout' onClick={() => router.push('/Checkout')}>
         Checkout
       </button>
     </div>

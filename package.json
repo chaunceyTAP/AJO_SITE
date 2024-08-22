@@ -3,17 +3,20 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "SET ORG_ID=18F332CC5B4DB4150A495DF0@AdobeOrg && next dev",
     "build": "next build",
-    "start": "next start",
+    "start": "SET ORG_ID=18F332CC5B4DB4150A495DF0@AdobeOrg && next start",
     "lint": "next lint"
   },
   "dependencies": {
+    "@adobe/alloy": "^2.21.1",
+    "dotenv": "^16.4.5",
+    "next": "14.2.5",
     "react": "^18",
-    "react-dom": "^18",
-    "next": "14.2.5"
+    "react-dom": "^18"
   },
   "devDependencies": {
+    "@rollup/plugin-commonjs": "^26.0.1",
     "eslint": "^8",
     "eslint-config-next": "14.2.5"
   }

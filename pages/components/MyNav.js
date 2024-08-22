@@ -26,9 +26,9 @@ function Example(props) {
             <NavItem>
               <NavLink href='/Shop/'>Shop</NavLink>
             </NavItem>
-            <NavItem>
+            {/* <NavItem>
               <NavLink href='about'>About</NavLink>
-            </NavItem>
+            </NavItem> */}
           </Nav>
         </Collapse>
       </Navbar>

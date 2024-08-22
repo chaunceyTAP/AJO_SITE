@@ -20,6 +20,7 @@ export default function CheckoutPage() {
 
   return (
     <div className={styles.container}>
+      <MyNav />
       <h1 className={styles.pageTitle}>Checkout</h1>
       {!orderSubmitted ? (
         <>
